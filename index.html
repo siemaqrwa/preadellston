@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e3554f">
+    <meta name="msapplication-navbutton-color" content="#e3554f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e3554f">
+    <meta name="description" content="Firma ogólnobudowlana Adellston specjalizująca się w stawianiu budynków">
+    <link rel="icon" href="img/icon.png">
+    <title>ADELLSTON</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="preloader" id="load">
+        <div class="border"></div>
+        <div class="border"></div>
+    </div>
+
+    <main id="main" class="hide">
+        <img src="img/logo.png">
+
+        <div>
+            <div>Firma ogólnobudowlana</div>
+
+            <div>
+                <i class="fas fa-phone"></i> 530 815 000
+            </div>
+
+            <div><i class="fas fa-envelope"></i> <span>kontakt@adellston.pl</span>
+            </div>
+
+            <div><i class="fas fa-map-marker-alt"></i> ul. Słoneczna 16/1 82-440 Dzierzgoń
+            </div>
+       
+        </div>
+    </main>
+
+           <div class="code hide" id="code">
+               
+               <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Dominik Piotrowski
+               
+           </div>
+
+
+</body>
+
+<script type="text/javascript">
+    
+    addEventListener("load", function(){
+        document.getElementById("load").classList.add("loaded");
+        document.getElementById("main").classList.remove("hide");
+        document.getElementById("code").classList.remove("hide");
+    });
+</script>
+
+</html>
