@@ -96,8 +96,8 @@ main {
     will-change: opacity, transform;
     -webkit-transform: translateY(0px) translateX(-50%);
     transform: translateY(0px) translateX(-50%);
-    margin: auto;
     opacity: 0;
+    
 }
 
 main.loaded {
