@@ -42,7 +42,9 @@
 
            <div class="code hide" id="code">
                
-               <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Dominik Piotrowski
+               <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Dominik Piotrowski <span class="contact hide" id="contact"><i class="fas fa-envelope"></i> szuszel1999@gmail.com </span>
+               
+               
                
            </div>
 
@@ -56,6 +58,10 @@
         document.getElementById("main").classList.add("loaded");
         document.getElementById("code").classList.add("loaded");
     });
+    
+    document.getElementById("code").onclick = function(){
+        document.getElementById("contact").classList.toggle("show");
+    };
 </script>
 
 </html>

@@ -43,10 +43,6 @@ body {
     position: absolute;
     height: 32px;
     width: 32px;
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
     will-change: transform;
 }
 
@@ -55,8 +51,8 @@ body {
     border-bottom: 8px solid #e3554f;
     left: calc(50% - 20px);
     bottom: calc(50% - 20px);
-    -webkit-transition: left .3s ease, bottom .3s ease;
-    transition: left .3s ease, bottom .3s ease;
+    -webkit-transition: left .3s .3s ease, bottom .3s .3s ease;
+    transition: left .3s .3s ease, bottom .3s .3s ease;
 }
 
 .preloader .border:nth-child(2) {
@@ -64,8 +60,8 @@ body {
     border-top: 8px solid #e3554f;
     right: calc(50% - 20px);
     top: calc(50% - 20px);
-    -webkit-transition: right .3s ease, top .3s ease;
-    transition: right .3s ease, top .3s ease;
+    -webkit-transition: right .3s .3s ease, top .3s .3s ease;
+    transition: right .3s .3s ease, top .3s .3s ease;
 }
 
 .preloader.loaded .border:nth-child(1) {
@@ -96,19 +92,19 @@ main.loaded {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     -webkit-transition: opacity .7s ease-out,
-        -webkit-transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out;
-    -webkit-transition: opacity .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        transform .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out,
-        transform .7s .3s ease-out;
+        -webkit-transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out;
+    -webkit-transition: opacity .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        transform .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out,
+        transform .7s .6s ease-out;
 }
 
 img {
@@ -140,9 +136,6 @@ main div {
         width: 70vw;
     }
     
-    .code {
-        display: none;
-    }
 }
 
 .code {
@@ -158,15 +151,15 @@ main div {
 }
 
 .code.loaded {
-    -webkit-transition: opacity .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        transform .7s .3s ease-out;
-    transition: opacity .7s .3s ease-out,
-        transform .7s .3s ease-out,
-        -webkit-transform .7s .3s ease-out;
+    -webkit-transition: opacity .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        transform .7s .6s ease-out;
+    transition: opacity .7s .6s ease-out,
+        transform .7s .6s ease-out,
+        -webkit-transform .7s .6s ease-out;
     will-change: opacity, transform;
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
@@ -191,6 +184,23 @@ main div {
     transform: scale(1.2) rotate(90deg);
     -webkit-animation: pulse 1.17s .4s ease-in-out infinite;
     animation: pulse 1.17s .4s ease-in-out infinite;
+}
+
+.contact {
+    opacity: 0;
+    -webkit-transition: opacity .7s ease-out,
+        -webkit-transform .7s ease-out;
+    transition: opacity .7s ease-out,
+        -webkit-transform .7s ease-out;
+    transition: opacity .7s ease-out,
+        transform .7s ease-out;
+    transition: opacity .7s ease-out,
+        transform .7s ease-out,
+        -webkit-transform .7s ease-out;
+}
+
+.contact.show {
+    opacity: 1;
 }
 
 
