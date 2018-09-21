@@ -19,7 +19,8 @@ main {
     opacity: 0;
 }
 
-html,body {
+html,
+body {
     height: 100%;
     height: 100vh;
     margin: 0;
@@ -67,13 +68,13 @@ body {
 .preloader.loaded .border:nth-child(1) {
     bottom: 16px;
     left: 16px;
-    
+
 }
 
 .preloader.loaded .border:nth-child(2) {
     right: 16px;
     top: 16px;
-    
+
 }
 
 main {
@@ -84,7 +85,7 @@ main {
     left: 50%;
     top: 50%;
     will-change: opacity, transform, -webkit-transform;
-    
+
 }
 
 main.loaded {
@@ -131,11 +132,15 @@ main div {
     body {
         font-size: 1.25em;
     }
-    
+
     img {
         width: 70vw;
     }
-    
+
+    main i {
+        width: 100%;
+    }
+
 }
 
 .code {
@@ -206,6 +211,7 @@ main div {
 
 
 @-webkit-keyframes pulse {
+
     0%,
     20%,
     40%,
@@ -224,6 +230,7 @@ main div {
 
 
 @keyframes pulse {
+
     0%,
     20%,
     40%,
